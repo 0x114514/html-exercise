@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- audio 标签用来向页面中引入一个音频文件
+            音视频文件引入是,不允许用户控制播放暂停
+        属性
+            controls 是否允许用户控制播放
+            autoplay 音频文件自动播放(如果设置了autoplay,则音乐在打开页面时会自动播放)
+                (通常结合js使用)
+            loop 循环播放
+            
+    -->
+    <!-- <audio src="./source/sound.mp3" controls loop></audio> -->
+    <!-- 除了通过src指定文件路径,还可以通过source指定 -->
+    <audio controls></audio>
+        对不起,您的浏览器不支持播放音频
+        <source src="./source/sound.mp3">
+            <!-- 可以添加多个文件,解决兼容性问题 -->
+        <source src="./source/sound.xxx">
+    </audio>
+    <embed src="./source/sound.mp3" width="200" height="50" type="audio/mp3">
+        <!-- 如果要同时支持chrome/ie8,可以把embed放入audio标签 -->
+        
+        <!-- <audio controls>
+            <source src="./source/sound.mp3">
+            <embed src="./source/sound.mp3" width="200" height="50" type="audio/mp3">
+        </audio> -->
+        
+
+
+
+
+    <!-- 使用video标签引入视频 -->
+    <video controls loop>
+        <source src="./source/realshort.mp4">
+        <embed src="./source/realshort.mp4" type="video/mp4">
+    </video>
+
+    <br>
+    <!-- 引入腾讯视频外链 -->
+    <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=t0034201b7o" allowFullScreen="true" width="500" height="300"></iframe>
+
+</body>
+</html>

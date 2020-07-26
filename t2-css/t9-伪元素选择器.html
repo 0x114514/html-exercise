@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 50px;
+        }
+        /* 伪元素：表示页面中特殊的，并不真实存在的元素 
+            例如为首字母设置单独的样式 
+                ::first-letter
+        */
+        p::first-letter{
+            font-size: 80px;
+        }
+
+        p::first-line{
+            background-color: rgb(0, 255, 255);
+        }
+
+        p::selection{
+            color: darkgreen;
+            background-color: chocolate;
+        }
+
+        /* 对于div
+            ::before
+            ::after
+                必须结合content属性来使用
+         */
+
+        /* div::before{
+            content: 'abc';
+            color: red;
+        }
+
+        div::after{
+            content: 'haha';
+            color: darkkhaki;
+        } */
+
+        div::before{
+            content: '❤';
+            
+        }
+    </style>
+</head>
+<body>
+    <div>Hello how are you</div>
+    <em></em>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolore iste repudiandae quae itaque praesentium nihil perferendis voluptate dicta, repellendus cum commodi alias officiis culpa quod consectetur repellat dolorum porro.</p>
+
+</body>
+</html>

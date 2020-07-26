@@ -1,0 +1,21 @@
+    /* 注释中的内容会被浏览器忽略 */
+    /* CSS基本语法
+        选择器,声明块
+
+        选择器:
+            通过选择器可以选中页面的指定元素
+                比如p{}的作用就是选中页面的所有p元素
+        声明块:
+            通过声明块来为元素设置样式
+                声明块由一个个的声明组成
+    */
+    p{
+        color: tomato;
+        font-size: 50px;
+        background-color: turquoise;
+        /* color 样式名,tomato 样式值 */
+    }
+    h1{
+        color: teal;
+        font-size: 80px;
+    }

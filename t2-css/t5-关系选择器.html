@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 为div的子元素span设置字体颜色是红色
+            为div直接包含的span设置字体颜色
+
+            子元素选择器
+                作用：选中指定父元素的指定子元素
+                    语法：
+                        父元素 > 子元素
+        */
+        /* div > span{
+            color: red;
+        } */
+        /* 如果要选择只有最外层的div包含的span
+            可以加class
+        */
+
+        /* div.box > span{
+
+            font-size: 80px;
+        } */
+
+        /* 后代元素选择器
+            作用：选中指定元素内的所有后代
+                语法：
+                    祖先 后代
+                    空格↑
+        */
+        div span{
+            color: royalblue;
+        }
+
+        /* 选择器套娃 */
+        div.div1 > div.div2 >div.div3{
+            background-color: sandybrown;
+        }
+
+        /* 选择下一个兄弟
+            语法：
+                前一个 + 后一个    
+        */
+
+        p + span{
+            font-size: 99px;
+        }
+        /* 选择下面所有的兄弟
+            语法：p ~ h1
+         */
+        p ~ h1{
+            color: seagreen;
+        }
+    </style>
+</head>
+<body> 
+    <!-- 
+        父元素
+            直接包含子元素的元素叫做父元素
+        子元素
+            直接被父元素包含的元素元素是子元素
+        祖先元素
+            直接或间接包含后代元素的元素叫做祖先元素
+            一个元素的父元素也是它的祖先元素
+        后代元素
+            直接或间接被祖先元素包含的元素叫后代元素
+        兄弟元素
+            拥有相同父元素的元素是兄弟元素
+     -->
+        <div class="box">我是一个div
+            <p>我是div中的p
+                <div><span>我是p元素中的span</span></div>
+            </p>
+            <h1>h1</h1>
+            <h1>h1-2</h1>
+            <span>我是div中的span</span>
+
+        </div>
+    
+        <div class="div1">
+            <div class="div2">
+                <div class="div3">
+                    我是套娃div
+                </div>
+                <div>我是套娃div2</div>
+            </div>
+        </div>
+</body>
+</html>

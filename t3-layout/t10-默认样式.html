@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 重置样式表是专门对浏览器的样式进行重置的
+            reset.css       直接去除了浏览器的默认样式
+            normalize.css   对默认样式进行了统一
+        -->
+    <style>
+        /* 通常情况下,浏览器都会为元素设置一些默认样式
+            默认样式的存在会影响到页面布局
+            通常情况下,编写网页时,必须要去除浏览器的默认样式(pc端页面)
+         */
+         
+        .box1{
+            width: 100px;
+            height: 100px;
+            border: 1px black solid;
+        }
+        /* body{
+            margin: 0px;
+        }
+        p{
+            margin: 0px;
+        } */
+        /* 项目符号风格 list-style */
+        /* 去除项目符号 */
+        /* ul{
+            margin: 0px;
+            padding: 0px;
+            
+            list-style: none;
+            
+        }
+        ol{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        } */
+        /* 通常情况不这么写
+            最简单的写法就是*{
+
+                margin:0px;
+                padding:0px;
+            }
+         */
+         /* *{
+             padding: 0px;
+             margin: 0px;
+         } */
+         /* 并不是最完美的方案,有时会有残留
+                使用重置样式表
+          */
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+    <p>我是一个段落</p>
+
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ul>
+    <ol>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+    </ol>
+</body>
+</html>

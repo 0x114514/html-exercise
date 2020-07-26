@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#box1{
+            color: yellow;
+        }
+        .red{
+            color: red;
+        }
+        #box1{
+            color: greenyellow !important;
+        }
+        /* !important 
+            可以在某一个样式的后面添加一个!important，该样式会获得最高的优先级，权重超过内联样式
+                注意：
+                    在开发中一定要慎用
+            */
+        div,span,p{
+            color: indianred;
+            /* 单独计算 */
+        }
+
+        /* 
+            样式的冲突
+                当我们通过不同的选择器选中一个相同的元素，并且为相同的样式设置不同的值时
+                此时就发生了样式的冲突
+                    发生样式冲突时，应用哪个样式由选择器的权重决定
+                
+                选择器的权重
+                    内联样式 》 id选择器 》 类和伪类选择器 》 元素选择器 》通配选择器》继承的样式
+                    1000        100             10              1           0        没有
+                    比较优先级时，需要将所有的优先级相加计算，优先级越高，则越优先显示（分组选择器单独计算）
+                    选择器的累加不会超过最大的数量级，类选择器再高，也不会超过id选择器
+                如果两个相同权重的选择器冲突，位于下面的生效
+        */
+    </style>
+</head>
+<body>
+    <div id="box1" class="red" ">我是一个div</div>
+</body>
+</html>

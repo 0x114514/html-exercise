@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 将所有段落设置为红色
+    元素选择器
+        根据标签名选择指定元素
+*/
+
+    /* p{
+        color: red;
+        font-size: 50px;
+    }
+
+    h1{
+        color: skyblue;
+        font-size: 80px;
+    } */
+    /* 如果要设置单个元素的格式，需要用id选择器
+        id选择器
+            语法：
+                #id属性值{}
+    */
+    #text1{
+    color: greenyellow;
+    font-size: 90px;
+    }
+    /* 
+        类选择器，将秋水……设置为蓝色
+        语法
+            .class属性值
+    */
+    .class1{
+        color: blue;
+        font-size: 100px;
+    }
+    .class2{
+        background-color: chartreuse;
+    }
+
+    /* 通配选择器
+        选中页面的所有元素
+            语法：
+                *{}
+    */
+    *{
+        font-weight: bolder;
+    }
+    </style>
+</head>
+<body>
+    <p>少小离家老大回</p>
+    <p>乡音无改鬓毛衰</p>
+    <h1 class="class1">秋水共长天一色</h1>
+    <h1 class="class1">落霞与孤鹜齐飞</h1>
+    <!-- class和id类似
+            不同的是class可以分配给多个元素
+            一个元素可以有多个class
+
+    -->
+    <p id="text1">儿童相见不相识</p>
+    <p class="class1 class2">笑问客从何处来</p>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        /* .right-news{
+            background-color: #fff;
+            width: 320px;
+            margin: 20px auto;
+        }
+        .headers{
+            width: 64px;
+            height: 24px;
+        }
+        .headers-item{
+            line-height: 24px;
+        }
+        .list-li{
+            height: 30px;
+        }
+        .list-item{
+            line-height: 30px;
+            margin-left: 5px;
+        }
+        .photo-item{
+            margin: 0px auto;
+        }
+        a{
+            text-decoration: none;
+            color: #333333;
+        } */
+        /* 设置容器样式 */
+        .news-wrapper{
+            width: 300px;
+            height: 359px;
+            background-color: #F6F6F6;
+            margin: 50px auto;
+            border-top: 1px #dddddd solid;
+        }
+        .news-title{
+            height: 40px;
+            display: inline-block;
+            /* 为了边框和文字一样宽,需要设置成行内块 */
+            border-top: 1px red solid;
+            margin-top: -1px;
+        }
+        .news-title-item{
+            line-height: 40px;
+           
+        }
+        .news-title-item{
+            text-decoration: none;
+            color: #404040;
+            font-weight: bolder;
+        }
+        .news-img{
+            height: 150px;
+        }
+        .news-img a{
+            text-decoration: none;
+        }
+        .news-img-text{
+            color: white;
+            font-size: 20px;
+            margin-top: -30px;
+            margin-left: 20px;
+        }
+        .news-list{
+            margin-top: 20px;
+            /* list-style: square; */
+        }
+        .news-item-wrapper{
+            height: 30px;
+            /* margin-left: 30px; */
+        }
+        .news-item::before{
+            content: '■';
+            color: rgb(218, 218, 218);
+            padding-left: 5px;
+            padding-right: 5px;
+            
+        } 
+        .news-item{
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="right-news">
+        <div class="headers">
+            <div class="headers-item">体育</div>
+        </div>
+
+        <div class="photo">
+            <img class="photo-item" src="./img/1.jpg">
+        </div>
+
+        <div class="list">
+            <ul class="list-ul">
+                <li class="list-li"><a href="javascript:;" class="list-item">飞机因疫情被封存后走流程总共分几步?</a></li>
+                <li class="list-li"><a href="javascript:;" class="list-item">海南将试水部分开放的第七航权是啥</a></li>
+
+            </ul>
+        </div>
+    </div> -->
+    <!-- 创建新闻列表外层容器 -->
+    <div class="news-wrapper">
+        <!-- 创建一个标题标签 -->
+        <h2 class="news-title">
+            <a class="news-title-item" href="javascript:;">
+                体育
+            </a>
+        </h2>
+        <!-- 创建图片容器 -->
+        <div class="news-img">
+            <a href="javascript:;">
+                <img src="./img/1.jpg">
+                <!-- 创建图片标题 -->
+                <h2 class="news-img-text">恒大发布战申花海报:别来无恙</h2>
+            </a>
+        </div>
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li class="news-item-wrapper">
+                <a class="news-item" href="javascript:;">乔治:我爱LA 喜欢和LBJ一起打球</a>
+            </li>
+            <li class="news-item-wrapper">
+                <a class="news-item" href="javascript:;">格林:3年前降薪就在等KD 特制T恤嘲讽LBJ</a>
+            </li>
+            <li class="news-item-wrapper">
+                <a class="news-item" href="javascript:;">塔克4000双鞋让保罗羡慕嫉妒 乔丹被震惊</a>
+            </li>
+            <li class="news-item-wrapper">
+                <a class="news-item" href="javascript:;">CBA下季新赛制:常规赛4组循环 增至46轮</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 现在需要将class为red的元素设置为红色 -->
+    <style>
+        .red{
+            color: red;
+        }
+        /* 需要将class为red的div设置为38px */
+        /* 交集选择器
+            语法：
+                选择器1选择器2选择器3选择器4
+            交集选择器中如果有元素选择器，必须使用元素选择器开头
+        */
+        div.red{
+            font-size: 38px;
+        } 
+        .a.b.c.d{
+
+            background-color: salmon;
+        }
+        /* div#box1 这种写法没有必要，仅使用#box1即可确定唯一元素 */
+        
+        /* 选择器分组 同时选择多个选择器对应的元素（并集）
+            语法：
+                a,b,c,d{}
+        */
+        h1,span{
+            color: turquoise;
+
+        }
+        /* 
+            h1,red.div
+            多种选择器可以一起使用
+            
+        */
+    </style>
+</head>
+<body>
+    <div class="red a b c d">我是div</div>
+    <p class="red">我是p元素</p>
+    <h1 c>
+        标题
+    </h1>
+    <span>
+        哈哈哈
+    </span>
+</body>
+</html>

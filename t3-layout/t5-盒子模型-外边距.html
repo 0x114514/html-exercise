@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            border: 10px red solid;
+            /* 外边距（maigin）：
+                外边距不会影响盒子的可见框大小
+                但是外边距会影响盒子的位置
+                    一共有四个方向的外边距
+                        margin-top
+                            上外边距 正值，元素向下移动，负值，元素向上移动
+                        margin-right
+                        margin-bottom
+                        margin-left
+                            左外边距 正值，元素向右移动，负值，元素向左移动
+                        元素在页面中是按照自左向右的顺序排列的
+                            所以默认情况下，如果我们设置的左和上外边距，则会移动元素自身
+                            而设置下和右外边距会移动其他元素
+
+                */
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-right: 100px;
+                /* margin的简写属性：
+                    margin：100px 100px 100px 100px;    
+                */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
