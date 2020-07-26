@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            /* border: 10px red solid; */
+            /* outline: 10px red solid; */
+            /* outline 轮廓，用来设置元素的轮廓线，用法和border一模一样，
+                outline和border的不同
+                并不影响布局（元素大小） */
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.3) ;
+            /* box-shadow
+                用来设置元素的阴影效果，阴影不会影响页面的布局
+                    默认情况下，阴影在元素的正下方
+                    可以指定偏移量
+                        box-shadow: 10px 10px       10px     red; ←阴影颜色
+                                     ↑     ↑          ↑
+                              水平偏移量  垂直偏移量  阴影的模糊半径
+                              正值向右    正值向下
+            */
+        }
+        .box1:hover{
+            outline: 10px red solid; 
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* 圆角 */
+            border-radius: 50px 20px 30px 80px;
+            
+            /* 可以指定四个值
+                如果只设置三个值，那么左下和右上共享一个值
+                如果设置两个值，那么左上和右下一样，右上和左下一样
+            */
+            border-radius: 80px / 20px ;
+            /* 
+                如果设置两个值 以/分隔，可做出椭圆圆角
+            */
+            border-top-left-radius: 20px 50px;
+            /* 如果要将元素设置成圆形，可以这样写 */
+            border-radius: 50%;
+            /* 如果单独设置某一个角的值，可以做出椭圆圆角 */
+            /* 
+            可以分别设置
+            
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;            
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span>hello</span>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../t3-layout/css/reset.css">
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bbffaa;
+            float: left;
+            /* 浮动元素不会盖住文字，文字会自动环绕在浮动元素的周围 
+                 所以我们可以利用浮动设置文字环绕图片的效果 
+
+            */
+        }
+        .box2{
+            background-color: yellowgreen;
+            float: left ;
+            /* 
+                元素设置浮动以后，将会从文档流中脱离，脱离以后，元素的一些特点也会发生变化
+                    脱离文档流的特点
+                        块元素：
+                            1.块元素不再独占页面的一行
+                            2.默认宽度和高度都被内容撑开
+                        行内元素
+                            1.行内元素脱离文档流之后就会变成块元素，特点和块元素一样
+                        
+                        脱离文档流之后，不需要再区分 块 和 行内 了
+            */
+        }
+        .box3{
+           background-color: aqua; 
+        }
+        .s1{
+            background-color: orange;
+            float: left;
+
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1"></div>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas sed veniam id in vel quasi earum dicta cupiditate praesentium ad pariatur ratione ipsum architecto, atque error expedita commodi dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sit tenetur sequi odio architecto. Quibusdam, est explicabo vitae vero, eius temporibus aliquam veritatis, ipsa cum ut dicta molestiae provident deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. A architecto voluptate ullam eveniet in nam ipsam, molestiae hic fugit commodi, odio dolores. Nesciunt ipsa explicabo cum error porro alias dignissimos!Lorem
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas sed veniam id in vel quasi earum dicta cupiditate praesentium ad pariatur ratione ipsum architecto, atque error expedita commodi dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sit tenetur sequi odio architecto. Quibusdam, est explicabo vitae vero, eius temporibus aliquam veritatis, ipsa cum ut dicta molestiae provident deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. A architecto voluptate ullam eveniet in nam ipsam, molestiae hic fugit commodi, odio dolores. Nesciunt ipsa explicabo cum error porro alias dignissimos!Lorem
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque quas sed veniam id in vel quasi earum dicta cupiditate praesentium ad pariatur ratione ipsum architecto, atque error expedita commodi dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est sit tenetur sequi odio architecto. Quibusdam, est explicabo vitae vero, eius temporibus aliquam veritatis, ipsa cum ut dicta molestiae provident deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. A architecto voluptate ullam eveniet in nam ipsam, molestiae hic fugit commodi, odio dolores. Nesciunt ipsa explicabo cum error porro alias dignissimos!Lorem
+    </p> -->
+    <div class="box2">Hello</div>
+    <div class="box3">Hello</div>
+    <span class="s1">我是一个span</span>
+</body>
+</html>
