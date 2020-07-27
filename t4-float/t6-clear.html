@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+            float: left;
+            font-size: 50px;
+        }
+        .box2{
+            width: 400px;
+            height: 400px;
+            background-color: tomato;
+            float: right;
+            font-size: 50px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            font-size: 50px;
+            clear: left;
+            clear: right;
+            /* 由于box1的浮动，box3上移
+                也就是box3受到了box1浮动的影响，位置发生了改变
+                    如果我们不希望某个元素因为其他元素浮动的影响而改变位置，
+                    可以通过clear属性清除浮动元素对当前元素所产生的影响
+
+                可选值：
+                    left 清除左侧浮动元素对当前元素的影响
+                    right 清除右侧元素
+                    both 清除两侧中最大影响的那侧
+                原理：设置清除浮动以后，浏览器会自动为元素添加一个上外边距
+                    以使其位置不受其他元素影响
+             */
+        }
+        .box4{
+            border: red 10px solid;
+
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background-color: palevioletred;
+            float: left;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">
+        <div class="box5"></div>
+        <div class="clear"></div>
+        <!-- 可以在内部增加一个div，然后对这个div clear：both -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            border: red 10px solid;
+            /* overflow: hidden; */
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            float: left;
+        }
+
+        
+        /* .box3 {
+            clear: both;
+        } */
+        /* 使用after伪元素解决高度塌陷问题
+            
+         */
+         .box1::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+        </div>
+        <!-- <div class="box3">
+
+        </div> -->
+        <!-- div属于HTML，但是它需要处理CSS问题
+            虽然可以解决，但是我们希望CSS的问题由CSS自己解决
+        -->
+    </div>
+</body>
+
+</html>
