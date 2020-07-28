@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../自用CSS/reset.css">
+
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .navigation {
+            width: 1202px;
+            height: 48px;
+            margin: 10px auto;
+            background-color: #E8E7E3;
+            position: sticky;
+            top: 10px;
+            /* 
+                粘滞定位
+                    当元素的position属性设置为sticky时,则开启元素的粘滞定位
+                    粘滞定位和相对定位的特点基本一致
+                    但是粘滞定位不同的是,粘滞定位可以在元素到达某个位置时将其固定
+
+            */
+        }
+
+        .navigation-item {
+            height: 48px;
+            float: left;
+            text-decoration: none;
+            line-height: 48px;
+        }
+
+        .navigation-item-div {
+            line-height: 48px;
+            padding: 0px 44px;
+            color: #777777;
+            /* font-weight: normal; */
+            /* text-shadow: 0.2px 0.2px 0.1px black; */
+        }
+
+        .navigation-item-div:hover {
+            background-color: #3F3F3F;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="navigation">
+        <!-- <div class="navigation-item">
+            <a href="javascript:;" class="navigation-item-a">HTML/CSS</a>
+        </div>
+        <div class="navigation-item">
+            <a href="javascript:;" class="navigation-item-a">Browser Side</a>
+        </div>
+        <div class="navigation-item">
+            <a href="javascript:;" class="navigation-item-a">Server Side</a>
+        </div>
+        <div class="navigation-item">
+            <a href="javascript:;" class="navigation-item-a">Programming</a>
+        </div>
+        <div class="navigation-item">
+            <a href="javascript:;" class="navigation-item-a">XML</a>
+        </div>
+        <div class="navigation-item">
+            <a href="javascript:;" class="navigation-item-a">Web Building</a>
+        </div>
+        <div class="navigation-item">
+            <a href="javascript:;" class="navigation-item-a">Reference</a>
+        </div> -->
+
+        <a class="navigation-item" href="javascript:;">
+            <div class="navigation-item-div">
+                HTML/CSS
+            </div>
+        </a>
+        <a class="navigation-item" href="javascript:;">
+            <div class="navigation-item-div">
+                Browser Side
+            </div>
+        </a>
+        <a class="navigation-item" href="javascript:;">
+            <div class="navigation-item-div">
+                Server Side
+            </div>
+        </a>
+        <a class="navigation-item" href="javascript:;">
+            <div class="navigation-item-div">
+                Programming
+            </div>
+        </a>
+        <a class="navigation-item" href="javascript:;">
+            <div class="navigation-item-div">
+                XML
+            </div>
+        </a>
+        <a class="navigation-item" href="javascript:;">
+            <div class="navigation-item-div">
+                Web Building
+            </div>
+        </a>
+        <a class="navigation-item" href="javascript:;">
+            <div class="navigation-item-div">
+                Reference
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
