@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图练习</title>
+    <link rel="stylesheet" href="../../自用CSS/reset.css">
+    <style>
+        .imglist{
+            /* 设置图片容器 */
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            position: relative;
+        }
+        ul > li{
+            position: absolute;
+        }
+        /* 通过修改元素的层级来显示指定的图片 */
+        .imglist li:nth-child(1){
+            z-index: 1;
+        }
+
+        .pointer{
+            position: absolute;
+            z-index: 9999;
+            top: 450px;
+            left: 10px;
+        }
+        /* 设置导航点的样式 */
+        .pointer a{
+            /* display: block; */
+            
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255,255,255,0.6);
+            float: left;
+            margin-left: 5px;
+            border-radius: 50%;
+            /* 将背景颜色只设置到内容区,边距和内边框不再有背景颜色 */
+            border: 2px solid transparent;
+            background-clip: content-box;
+        }
+        
+        .pointer a.active{
+            background-color: #fff;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        .pointer a:hover{
+            background-color: rgba(255,255,255,0.8);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="imglist-container">
+        <ul class="imglist">
+            <li>
+                <a  href="javascript:;">
+                    <img src="./img/1.webp" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/2.webp" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/3.webp" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/4.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/5.webp" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/6.webp" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/7.webp" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="./img/8.webp" alt="">
+                </a>
+            </li>
+            <div class="pointer">
+                <a class="active" href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
