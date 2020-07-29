@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px red solid;
+            
+            /*
+             font可以设置字体相关的所有属性
+                写法：
+                font:字体大小 字体族;
+                在字体大小后可以加行高,如果不写行高，则会使用默认值，即使在前面指定了行高
+                在字体大小前面可以设置属性，例如bold加粗、italic斜体
+            */
+
+            /* font-size: 50px;
+            font-family: 'Times New Roman', Times, serif; */
+
+            /* font: 50px 'Times New Roman', Times, serif; */
+            line-height: 2;
+            font: bold italic 50px/1 微软雅黑 , 'Times New Roman', Times, serif;
+           /* 行高、字重、字体风格会被覆盖 */
+           /* font-weight 字重 字体的加粗
+            可选值：
+                normal      默认值
+                bold        加粗
+                100-900     九个级别（没什么用）
+           */
+           /* font-style: ;
+            字体风格：
+                normal      正常
+                italic      斜体
+           */
+        }
+
+    </style>
+</head>
+<body>
+    <div>今天天气真不错 Hello Hello</div>
+</body>
+</html>

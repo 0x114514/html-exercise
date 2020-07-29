@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            border: 1px red solid;
+            text-align: justify;
+            font-size: 50px;
+            /* text-align
+                设置文本的水平对齐
+                    可选值：
+                        left    默认值，左侧对其
+                        right   右对齐
+                        center  居中对齐
+                        justify 两端对齐
+            */
+
+            
+        }
+
+        span{
+            font-size: 20px;
+            border: 1px blue solid;
+            /* 
+            vertical-align: ;垂直对齐
+                可选值：
+                    baseline    默认值  基线对齐
+                    top         顶部对齐    让子元素的顶部和父元素的顶部贴在一起
+                    bottom      底部对齐    让子元素的底部和父元素的底部贴在一起
+                    middle      居中对齐（让子元素的中线和基线+一半‘x’的高度对其）
+                    也可以直接指定一个值
+            */
+            vertical-align: 100px;
+        }
+        p{
+            border: 1px orange solid;
+            
+        }
+        img{
+            vertical-align: middle;
+            /* 只要不是按照基线对齐就可以解决缝隙问题 */
+        }
+    </style>
+</head>
+<body>
+    <div>今天天气Hello<span>真不错</span>!</div>
+    <p>
+        <img src="../t3-layout/exercise/img/1.jpg" alt="">
+        <!-- 图片下面会有缝隙（因为基线） -->
+    </p>
+    <!-- <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquid iure sed ad quae ex odit blanditiis corporis aliquam debitis eveniet veritatis voluptatum modi laboriosam nihil quas, eius facilis rerum?
+    </div> -->
+</body>
+</html>
