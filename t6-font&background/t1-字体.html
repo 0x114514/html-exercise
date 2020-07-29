@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 问题
+            1.加载速度
+            2.版权
+        */
+        @font-face{
+                /* 指定字体名字,可以随便起 */
+            font-family: 'myfont';
+
+            src: url(./font/ZCOOLKuaiLe-Regular.ttf);
+
+        }
+        p{
+            /* 字体相关样式 
+                color 用来设置前景色(字体颜色)
+                font-size 用来设置字体大小
+                    和font-size相关的单位
+                        em 相当于当前元素的一个font-size
+                        rem 相当于根元素的一个font-size
+                font-family 指定字体族(字体的格式)
+                    serif       衬线字体
+                    sans-serif  非衬线字体
+                    monospace   等宽字体
+                    ↓↓花里胡哨的一般不用
+                    cursive     花体
+                    fantasy     虚幻字体
+
+            */
+            color: tomato;
+            font-size: 30px;
+            font-family: myfont;
+            /* font-family可以同时指定多个字体,多个字体间使用，隔开
+                字体生效时优先使用第一个,第一个无法使用则会使用第二个,以此类推
+            */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        今天天气不错 hello hello
+    </p>
+</body>
+</html>
