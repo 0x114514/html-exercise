@@ -1,0 +1,84 @@
+    /* 公共样式 */
+clearfix::after,clearfix::before{
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+.w{
+    /* 固定容器宽度 */
+    width: 1226px;
+    /* 设置容器居中 */
+    margin: 0px auto;
+    /* min-width 防止页面过小，内容溢出 */
+    min-width: 1226px;
+}
+
+/* 顶部导航条,外部容器 */
+.top-bar-wrapper{
+    height: 40px;
+    background-color: #333333;
+}
+
+/* 顶部导航条,左侧部分 */
+ul.service{
+    float: left;
+}
+
+ul.service li{
+    float: left;
+    line-height: 40px;
+}
+/* service内部元素 */
+ul.service a,li{
+    color: #b0b0b0;
+    font: 14px Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;;
+    text-decoration: none;
+}
+ul.service .line{
+    margin: 0px 3.6px;
+}
+
+/* 顶部导航条,右侧部分 */
+ul.shop-car{
+    float: right;
+}
+
+ul.shop-car li{
+    float: left;
+    text-align: center;
+}
+
+ul.shop-car a{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    color: #b0b0b0;
+    font: 14px Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+ul.user-info{
+    float: right;
+    margin-right: 20px;
+}
+
+ul.user-info li{
+    float: left;
+    line-height: 40px;
+}
+
+ul.user-info a,li{
+    color: #b0b0b0;
+    font: 14px Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;;
+    text-decoration: none;
+}
+
+ul.user-info .line{
+    margin: 0px 3.6px;
+}
